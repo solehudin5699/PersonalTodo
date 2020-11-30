@@ -11,7 +11,6 @@
 - [Features](#features)
 - [Requirements](#requirements-for-development)
 - [Installation](#installation-for-development)
-- [Demo PersonalTodo App](#demo-personaltodo-app)
 
 ## Description
 
@@ -31,6 +30,7 @@ mobile home screen.
 - <img src="https://img.shields.io/badge/MaterialUI-4.x.x-white?style=popout&logo=material-ui">
 - <img src="https://img.shields.io/badge/Bootstrap-4.x.x-080135?style=popout&logo=react-bootstrap">
 - <img src="https://img.shields.io/badge/Redux-4.x.x-764abc?style=popout&logo=redux">
+- others
 
 ## Features
 
@@ -47,17 +47,9 @@ mobile home screen.
 ## Installation for Development
 
 1. Open your terminal or command prompt
-2. Type `git clone https://github.com/solehudin5699/POS-frontend.git`
+2. Type `git clone https://github.com/solehudin5699/PersonalTodo.git`
 3. Open the folder and type `npm install` for install dependencies
 4. Configure firebase, click [`firebase configuration`](https://reactjs.org/)
    for detail
 5. Type `npm start` in terminal for running this project.
 6. If you want to build, type `npm run build`.
-
-## Demo PersonalTodo App
-
-This is Personal-Todo build version, sign up then login first for trying
-
-<a href="http://54.175.146.137:3002">
-  <img src="https://img.shields.io/badge/CitaRasa%20Web-Link%20Demo-blue.svg?style=popout&logo=firefox"/>
-</a>
