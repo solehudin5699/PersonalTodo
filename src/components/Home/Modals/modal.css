@@ -1,0 +1,102 @@
+.addtodo_container,
+.confirmdelete_container {
+  display: flex;
+  flex-direction: column;
+}
+.detailtodo_container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(71, 93, 235), rgb(245, 36, 203));
+  color: #ffffffc9;
+}
+.at_line,
+.cd_line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+}
+.dt_line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 10px 5px 10px;
+}
+.at_label,
+.dt_label {
+  flex: 0.3;
+  font-size: medium;
+  font-weight: 500;
+  color: black;
+  padding-right: 10px;
+}
+.dt_label {
+  color: #ffffffc9;
+  font-weight: normal;
+  font-size: 95%;
+}
+.at_input {
+  flex: 0.7;
+}
+.dt_desc {
+  flex: 0.7;
+  text-align: justify;
+  font-size: 95%;
+}
+.at_input > input {
+  width: 100%;
+  border-radius: 7px;
+  height: 40px;
+  border: 1px solid rgb(71, 93, 235, 1);
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.at_input > textarea {
+  width: 100%;
+  border-radius: 7px;
+  height: 100px;
+  border: 1px solid rgb(71, 93, 235, 1);
+  outline: none;
+  padding: 5px 15px 5px 15px;
+}
+.linetitle {
+  justify-content: center;
+  font-size: 100%;
+  color: #000000;
+}
+.linetitle_dt {
+  justify-content: center;
+  font-size: 100%;
+  color: #ffffffc9;
+}
+.linebtn {
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.at_btnAdd,
+.cd_btnCancel,
+.dt_btnOk {
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: rgb(71, 93, 235, 1);
+  border-radius: 5px;
+  font-size: 85%;
+  color: #ffffff;
+}
+.at_btnCancel,
+.cd_btnDelete {
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: rgb(245, 36, 203);
+  border-radius: 5px;
+  font-size: 85%;
+  color: #ffffff;
+}
+.marginRight15 {
+  margin-right: 15px;
+}

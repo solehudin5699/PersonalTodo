@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+.listitem_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: -1px 4px 20px -6px rgba(63, 45, 45, 0.3);
+  /* background-color: rgba(105, 213, 228, 0.623); */
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.listitem_title {
+  font-size: 1.2em;
+}
+.listitem_description {
+  font-size: 1em;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.438);
+  padding: 5px;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+.listitem_descriptionText {
+  font-size: 0.9em;
+  text-align: justify;
+}
+.listitem_footer {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25px;
+  border-radius: 5px;
+}
+.listitem_footerControl {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25px;
+  border-radius: 5px;
+}
+.listitem_footerText {
+  font-size: 0.5em;
+  line-height: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+.listitem_footerTextControl {
+  font-size: 0.45em;
+  line-height: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+  color: rgb(71, 93, 235);
+}
+.goView {
+  color: rgb(57, 224, 24);
+}
+.goUpdate {
+  color: rgb(71, 93, 235);
+}
+.goDelete {
+  color: rgb(245, 97, 215);
+}
+.listitem_footerText > .MuiSvgIcon-root {
+  font-size: 1.3em;
+  /* color: red; */
+  margin-right: 1px;
+}
+.listitem_footerTextControl > .MuiSvgIcon-root {
+  font-size: 1.5em;
+  /* color: red; */
+  margin-right: 1px;
+}
+.controlStep {
+  margin-top: 15px;
+  padding-top: 9px;
+}

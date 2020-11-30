@@ -1,0 +1,277 @@
+.sign_container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(71, 93, 235), rgb(245, 36, 203));
+}
+.sign_box {
+  width: 70vw;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.25);
+  overflow-x: hidden;
+  box-shadow: 4px 4px 20px 6px rgba(63, 45, 45, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.signUp-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signIn-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signUp-title,
+.signIn-title {
+  font-size: 1.9rem;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(245, 36, 203);
+  transition: all 0.6s ease-in-out;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.overlay-content {
+  display: none;
+}
+.signUp-active {
+  transform: translateX(100%);
+  transition: all 0.6s ease-in-out;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.inputStyle {
+  width: 75%;
+  height: 45px;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.errorInput {
+  font-size: 70%;
+  width: 75%;
+  color: red;
+  margin-top: -13px;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btnStyle {
+  width: 30%;
+  height: 45px;
+  border-radius: 5px;
+  transition: transform 80ms ease-in;
+  border: none;
+  font-size: 85%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: rgb(245, 36, 203);
+  box-shadow: 4px 4px 10px -6px rgba(63, 45, 45, 0.5);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btnOverlay {
+  background-color: rgb(71, 93, 235);
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+.signIn-link,
+.signUp-link {
+  display: none;
+}
+.overlay-left {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.overlay-right {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: -50%;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.overlay-rightActive {
+  transform: translateX(-100%);
+  transition: all 0.6s ease-in-out;
+}
+.overlay-leftActive {
+  transform: translateX(100%);
+  transition: all 0.6s ease-in-out;
+}
+.msgError {
+  font-size: 70%;
+  background-color: #ffffff;
+  color: red;
+  text-align: center;
+  width: auto;
+}
+.modalstatusRegist {
+  text-align: center;
+  margin-top: 35px;
+  color: black;
+  font-weight: normal;
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sign_container {
+    height: 210vh;
+  }
+  .sign_box {
+    width: 90vw;
+    height: 200vh;
+    flex-direction: column;
+  }
+  .signUp-box {
+    width: 100%;
+    height: 100vh;
+  }
+  .signIn-box {
+    width: 100%;
+    height: 100vh;
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(71, 93, 235), rgb(245, 36, 203));
+    transition: all 0.6s ease-in-out;
+  }
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .overlay-left {
+    display: none;
+  }
+  .overlay-right {
+    display: none;
+  }
+  .signUp-active {
+    transform: translateX(0) translateY(100%);
+    /* translate: translateY(100%); */
+    transition: all 0.85s ease-in-out;
+  }
+  .signIn-link,
+  .signUp-link {
+    display: block;
+    color: #ffffff;
+    font-size: 13px;
+  }
+  .signIn-link a:link,
+  .signIn-link a:visited,
+  .signIn-link a:hover,
+  .signIn-link a:active,
+  .signUp-link a:link,
+  .signUp-link a:visited,
+  .signUp-link a:hover,
+  .signUp-link a:active {
+    color: #ffffff;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+/*  */
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+} */
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}

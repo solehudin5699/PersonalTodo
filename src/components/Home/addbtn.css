@@ -1,0 +1,31 @@
+* {
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
+.container_add {
+  position: fixed;
+  bottom: 1vw;
+  width: 100vw;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 6;
+}
+.addbtn {
+  background-color: rgba(239, 239, 243, 0.87);
+  border-radius: 35px;
+  box-shadow: 0px 4px 20px 6px rgba(63, 45, 45, 0.3);
+  width: max-content;
+}
+.addbtn .MuiSvgIcon-root {
+  color: red;
+  font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+  .container_add {
+    bottom: 5vw;
+  }
+}
