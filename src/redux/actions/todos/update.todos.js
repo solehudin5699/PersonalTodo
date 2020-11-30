@@ -1,4 +1,4 @@
-import db from "../../../firebase";
+import db from "../../../services/firebase";
 import {
   updateTodo as update,
   reset,
@@ -26,7 +26,6 @@ export const updateTodo = (data) => {
         dispatch(updateTodoFulfilled(result));
       })
       .catch((err) => {
-        console.log(err);
         let error = {
           status: 200,
           msg: "Failed to update todo",
@@ -80,7 +79,6 @@ export const changeStepTodo = (data) => {
         dispatch(changeFulfilled(result));
       })
       .catch((err) => {
-        console.log(err);
         let error = {
           status: 200,
           msg: "Failed to update todo",

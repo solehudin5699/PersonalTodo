@@ -19,12 +19,6 @@ const validationSchema = Yup.object({
 });
 
 export default function SignUp(props) {
-  const [dataSignUp, setDataSignUp] = useState({
-    name: "",
-    username: "",
-    email: "",
-    password: "",
-  });
   const {
     isRegistPending,
     isRegistFulfilled,
@@ -45,12 +39,6 @@ export default function SignUp(props) {
           </div>
         ),
         icon: "success",
-      });
-      setDataSignUp({
-        name: "",
-        username: "",
-        email: "",
-        password: "",
       });
       setTimeout(() => {
         dispatch(resetRegist());

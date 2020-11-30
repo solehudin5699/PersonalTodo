@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { loginUser } from "../../redux/actions/users/auth";
@@ -13,53 +13,21 @@ const validationSchema = Yup.object({
 });
 
 export default function SignIn(props) {
-  const [dataLogin, setDataLogin] = useState({ email: "", password: "" });
   const dispatch = useDispatch();
-  const handleLogin = (e) => {
-    e.preventDefault();
-    dispatch(loginUser(dataLogin));
-  };
+
   const { isLogin, isLoginPending, isLoginRejected, errorLogin } = useSelector(
     (state) => state.auth
   );
   const history = useHistory();
   useEffect(() => {
     if (isLogin) {
-      history.push("/todos");
+      history.push("/");
     }
   }, [isLogin]);
   return (
     <>
       <div className='signIn-box' id='signIn'>
         <h3 className='signUp-title'>Login</h3>
-        {/* <form className='form-container' onSubmit={(e) => handleLogin(e)}>
-          <input
-            className='inputStyle'
-            placeholder='Email'
-            type='email'
-            value={dataLogin.email}
-            onChange={(e) =>
-              setDataLogin({ ...dataLogin, email: e.target.value })
-            }
-          />
-          <input
-            className='inputStyle'
-            placeholder='Password'
-            type='password'
-            value={dataLogin.password}
-            onChange={(e) =>
-              setDataLogin({ ...dataLogin, password: e.target.value })
-            }
-            required
-          />
-          <button className='btnStyle'>
-            {isLoginPending ? (
-              <i className='fa fa-spinner fa-spin fa-2x fa-fw'></i>
-            ) : (
-              "Sign In"
-            )}
-          </button>
-        </form> */}
         <Formik
           initialValues={{ email: "", password: "" }}
           validationSchema={validationSchema}

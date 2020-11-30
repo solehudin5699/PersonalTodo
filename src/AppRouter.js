@@ -9,7 +9,7 @@ function AppRouter() {
     <Router>
       <div>
         <Route path='/auth' component={Auth} />
-        <PrivateRoute exact path='/todos' component={Home} />
+        <PrivateRoute exact path='/' component={Home} />
       </div>
     </Router>
   );

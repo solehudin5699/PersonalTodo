@@ -1,4 +1,4 @@
-import db from "../../../firebase";
+import db from "../../../services/firebase";
 import { postTodo as post, reset } from "./actionTypes";
 
 export const postTodo = (data) => {

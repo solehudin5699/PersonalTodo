@@ -1,4 +1,4 @@
-import db from "../../../firebase";
+import db from "../../../services/firebase";
 import { deleteTodo as del, reset } from "./actionTypes";
 
 export const deleteTodo = (data) => {

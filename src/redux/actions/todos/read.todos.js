@@ -1,4 +1,4 @@
-import db, { auth } from "../../../firebase";
+import db, { auth } from "../../../services/firebase";
 import { getTodos, reset } from "./actionTypes";
 
 export const getAllTodos = (data) => {
@@ -23,7 +23,6 @@ export const getAllTodos = (data) => {
         dispatch(getAllTodosFulfilled({ status: 200, data: todos }));
       })
       .catch((err) => {
-        console.log(err);
         dispatch(
           getAllTodosRejected({ status: 500, msg: "Can not get all todos" })
         );

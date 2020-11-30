@@ -1,4 +1,4 @@
-import db, { auth } from "../../../firebase";
+import db, { auth } from "../../../services/firebase";
 import { login, regist, logout, reset } from "./actionTypes";
 
 // SIGN IN
