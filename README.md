@@ -11,6 +11,7 @@
 - [Features](#features)
 - [Requirements](#requirements-for-development)
 - [Installation](#installation-for-development)
+- [Screenshoots](#screenshoots)
 - [Demo PersonalTodo App](#demo-personaltodo-app)
 
 ## Description
@@ -76,6 +77,12 @@ export default db;
 
 5. Type `npm start` in terminal for running this project.
 6. If you want to build, type `npm run build`.
+
+## Screenshoots
+
+| <img width="100%" src="./src/assets/images/1.png"> | <img width="100%" src="./src/assets/images/2.png"> |
+| -------------------------------------------------- | -------------------------------------------------- |
+| <img width="100%" src="./src/assets/images/3.png"> | <img width="100%" src="./src/assets/images/4.png"> |
 
 ## Demo PersonalTodo App
 
