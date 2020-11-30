@@ -54,8 +54,6 @@ mobile home screen.
    contents :
 
 ```javascript
-import foobar
-
 import firebase from "firebase";
 const firebaseConfig = {
   apiKey: "your_app_apiKey",
