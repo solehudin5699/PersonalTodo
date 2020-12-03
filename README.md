@@ -84,6 +84,10 @@ export default db;
 | -------------------------------------------------- | -------------------------------------------------- |
 | <img width="100%" src="./src/assets/images/3.png"> | <img width="100%" src="./src/assets/images/4.png"> |
 
+| <img width="100%" src="./src/assets/image/5.png"> |
+<img width="100%" src="./src/assets/image/6.png"> |
+<img width="100%" src="./src/assets/image/7.png"> |
+
 ## Demo PersonalTodo App
 
 This is PersonalTodo App build version,sign up and then login for trying it.

@@ -10,6 +10,7 @@ export default function LoadingIndicator() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "30vh",
       }}>
       <SpinnerCircular
         secondaryColor='transparent'

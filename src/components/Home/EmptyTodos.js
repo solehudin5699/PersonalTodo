@@ -11,6 +11,7 @@ export default function LoadingIndicator() {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        marginTop: "30vh",
       }}>
       <img
         src={emptyIcon}
