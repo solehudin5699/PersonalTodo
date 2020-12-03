@@ -80,13 +80,11 @@ export default db;
 
 ## Screenshoots
 
-| <img width="100%" src="./src/assets/images/1.png"> | <img width="100%" src="./src/assets/images/2.png"> |
-| -------------------------------------------------- | -------------------------------------------------- |
-| <img width="100%" src="./src/assets/images/3.png"> | <img width="100%" src="./src/assets/images/4.png"> |
-
-| <img width="100%" src="./src/assets/images/5.jpeg"> |
-<img width="100%" src="./src/assets/images/6.jpeg"> |
-<img width="100%" src="./src/assets/images/7.jpeg"> |
+| <img width="100%" src="./src/assets/images/1.png">  | <img width="100%" src="./src/assets/images/2.png">  |
+| --------------------------------------------------- | --------------------------------------------------- |
+| <img width="100%" src="./src/assets/images/3.png">  | <img width="100%" src="./src/assets/images/4.png">  |
+| <img width="100%" src="./src/assets/images/5.jpeg"> | <img width="100%" src="./src/assets/images/6.jpeg"> |
+| <img width="100%" src="./src/assets/images/7.jpeg"> |                                                     |
 
 ## Demo PersonalTodo App
 
