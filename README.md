@@ -1,4 +1,4 @@
-# Personal Todo <img src="https://img.shields.io/badge/Build%20with-ReactJs-61dbfb?style=popout&logo=react">
+# Personal Todo <img src="https://img.shields.io/badge/Built%20with-ReactJs-61dbfb?style=popout&logo=react">
 
 <div align="center">
     <img width="250" src="./public/logo512.png">
@@ -25,7 +25,7 @@ done.
 This web project is a progressive web application, so you can install or add to
 mobile home screen.
 
-## Build with
+## Built with
 
 - <img src="https://img.shields.io/badge/ReactJs-17.x.x-61dbfb?style=popout&logo=react">
 - <img src="https://img.shields.io/badge/Firebase-8.x.x-FFA611?style=popout&logo=firebase">
@@ -84,7 +84,6 @@ export default db;
 | --------------------------------------------------- | --------------------------------------------------- |
 | <img width="100%" src="./src/assets/images/3.png">  | <img width="100%" src="./src/assets/images/4.png">  |
 | <img width="100%" src="./src/assets/images/5.jpeg"> | <img width="100%" src="./src/assets/images/6.jpeg"> |
-| <img width="100%" src="./src/assets/images/7.jpeg"> |                                                     |
 
 ## Demo PersonalTodo App
 
